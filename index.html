@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publishing Code on GitHub</title>
+  <style>
+    /* Add some basic styling for readability */
+    body {
+      font-family: sans-serif;
+      line-height: 1.5;
+    }
+    h2 {
+      margin-bottom: 1em;
+    }
+    pre {
+      background-color: #00FFFF;
+      padding: 1em;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome! Let's Publish Code on GitHub</h1>
+
+  <h2>What is GitHub?</h2>
+  <p>GitHub is a popular version control system and code hosting platform for software development projects. It allows you to track changes in your code, collaborate with others, and share your projects publicly or privately.</p>
+
+  <h2>Adding and Publishing Code</h2>
+  <p>Here's a basic overview of how to add and publish your code on GitHub:</p>
+
+  <h3>1. Create a GitHub Account (if you don't have one)</h3>
+  <p>Head over to https://github.com/ and sign up for a free account.</p>
+
+  <h3>2. Create a New Repository</h3>
+  <p>Once logged in, click on the "+" button in the top right corner and select "New repository". Give your repository a descriptive name and optionally add a brief description.</p>
+
+  <h3>3. Create Your Code File(s)</h3>
+  <p>Use a text editor (like Notepad, Sublime Text, or Visual Studio Code) to create your HTML, CSS, JavaScript, or any other code files for your project. Save them with appropriate extensions (e.g., `.html`, `.css`, `.js`).</p>
+
+  <h3>4. Initialize a Git Repository (Locally)</h3>
+  <p>Open your terminal or command prompt and navigate to the directory where you saved your code files. Run the following command to initialize a local Git repository:
+    <pre>git init</pre>
+  </p>
+
+  <h3>5. Add Your Code Files</h3>
+  <p>Use the following command to add your code files to the Git staging area:
+    <pre>git add .</pre>
+    This command adds all files in the current directory (use specific file names if you only want to add a few).
+  </p>
+
+  <h3>6. Commit Your Changes</h3>
+  <p>Run the following command to commit your staged changes with a descriptive message:
+    <pre>git commit -m "Initial commit" (Replace "Initial commit" with your own message)</pre>
+  </p>
+
+  <h3>7. Connect to Your Remote Repository (on GitHub)</h3>
+  <p>In your terminal, run the following command to establish a connection between your local Git repository and your remote repository on GitHub (replace `<username>` and `<repository-name>` with your actual details):
+    <pre>git remote add origin git@github.com:<username>/<repository-name>.git</pre>
+  </p>
+
+  <h3>8. Push Your Code to GitHub</h3>
+  <p>Finally, push your committed code to your remote repository on GitHub:
+    <pre>git push -u origin master</pre>
+    This command pushes your code to the "master" branch of your remote repository.
+  </p>
+
+  <h2>Accessing Your Published Code</h2>
+  <p>Once you've pushed your code to GitHub, you can access your published webpage using a URL like this: `https://<username>.github.io/<repository-name>` (replace `<username>` and `<repository-name>` with your details).</p>
+
+  <h2>Congratulations!</h2>
+  <p>You've successfully published your code on GitHub. Now you can share the link to your webpage with others or continue developing your project.</p>
+</body>
+</html>
